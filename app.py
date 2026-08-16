@@ -14,7 +14,7 @@ st.title("📦 Supply Chain & Logistics Performance Analytics")
 @st.cache_data
 def load_data():
     # Export the final cleaned dataframe to a CSV file for the Streamlit app    
-    df = pd.read_csv('cleaned_logistics_data.csv')
+    df = pd.read_csv('cleaned_logistics_data.zip')
     return df
 
 try:
