@@ -11,11 +11,22 @@ An end-to-end data analytics and machine learning pipeline built to evaluate and
 ---
 
 ## 📸 Dashboard Preview
-*(Tip: To add images, upload your screenshots into your GitHub repository or drag them into the editor, then reference them below)*
 
-| Executive Summary & KPIs | Geographic Delivery Bottlenecks |
+### 1. High-Level Operations & Bottlenecks
+
+| Executive Summary & High-Level KPIs | Regional Bottleneck Analysis |
 | :---: | :---: |
-| ![Dashboard Overview](path-to-image-1.png) | ![Geographic Analysis](path-to-image-2.png) |
+| ![Executive Summary](Executive_Summary.png) | ![Regional Bottleneck Analysis](Regional_BottleNeck_Analysis.png) |
+| **What it shows:** Core logistical metrics such as total orders, average transit time, overall delay percentage, and top-level KPI scorecards. | **What it shows:** Geographic heatmaps and regional delivery delays, highlighting specific Brazilian states and transit corridors with the highest bottleneck risks. |
+
+---
+
+### 2. Predictive Delay Modeling ("What-If" Simulations)
+
+| Predictive Risk Assessment (High Risk) | Low-Risk Route Simulation |
+| :---: | :---: |
+| ![Decision Tree High Risk](Decision_Tree_Risk.png) | ![Decision Tree Low Risk](Decision_Tree_LowRisk.png) |
+| **What it shows:** Scikit-Learn Decision Tree model predicting a high probability of delivery delay based on heavy product weight, long distance, or high-risk destination states. | **What it shows:** "What-If" parameter adjustments demonstrating an on-time or low-risk delivery trajectory based on optimized attributes. |
 
 ---
 
@@ -44,18 +55,3 @@ If you want to test or run this project on your local machine, follow these step
    ```bash
    git clone [https://github.com/dileepkumarmallela391/supply-chain-analytics-dashboard.git](https://github.com/dileepkumarmallela391/supply-chain-analytics-dashboard.git)
    cd supply-chain-analytics-dashboard
-
-cd supply-chain-analytics-dashboard
-1. Install dependencies:
-
-Bash
-pip install -r requirements.txt
-
-2. Run the application:
-Ensure cleaned_logistics_data.zip is located in the root directory, then execute:
-
-Bash
-streamlit run app.py
-
-👨‍💻 Author
-Dileep Kumar
